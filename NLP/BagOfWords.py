@@ -23,3 +23,9 @@ word_counts = count_vec.fit_transform(documents)
 df_word_counts = pd.DataFrame(word_counts.toarray(), 
                               columns=count_vec.get_feature_names_out())
 print(df_word_counts)
+
+# Bag of Words for random sentence, with resprect to the words from df_word_counts
+
+sentence = ["Hello i love you"]
+bow = count_vec.transform(sentence).toarray()
+print(bow)
