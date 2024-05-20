@@ -89,8 +89,7 @@ print()
 nn = DeepNNClass.NeuralNetwork(input_nodes, learning_rate)
 nn.layer(100)
 nn.layer(100)
-nn.layer(1000)
-nn.layer(50)
+nn.layer(100)
 nn.layer(output_nodes)
 
 
