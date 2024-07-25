@@ -5,6 +5,13 @@ Created on Mon Mar 11 16:31:08 2024
 
 @author: cornelius
 """
+"""
+Required Modules to install beforehand:
+-> pandas
+-> sklearn
+
+"""
+
 
 # ------------------------ IMPORTS -------------------------------------------
 
