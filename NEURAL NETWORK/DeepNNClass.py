@@ -99,8 +99,8 @@ class NeuralNetwork():
 
 
     def fit(self,features,labels,epochs):
-        feature_train = feature_train.values.tolist()
-        label_train = label_train.values.tolist()
+        features = features.values.tolist()
+        labels = labels.values.tolist()
         for epoch in range(epochs):
             for i in range(len(features)):
                 targetvector = np.zeros(self.node_list[-1]) + 0.01
@@ -120,7 +120,7 @@ class NeuralNetwork():
 
     def predict(self,test_features):
         # so it can handle dataframes
-        feature_test = feature_test.values.tolist()
+        test_features = test_features.values.tolist()
         results = []
         for features in test_features:
             inputs = np.array(features,ndmin=2)
