@@ -119,6 +119,8 @@ class NeuralNetwork():
     # type(test_features) = numpy array of arrays
 
     def predict(self,test_features):
+        # so it can handle dataframes
+        feature_test = feature_test.values.tolist()
         results = []
         for features in test_features:
             inputs = np.array(features,ndmin=2)
