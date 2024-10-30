@@ -99,6 +99,8 @@ class NeuralNetwork():
 
 
     def fit(self,features,labels,epochs):
+        feature_train = feature_train.values.tolist()
+        label_train = label_train.values.tolist()
         for epoch in range(epochs):
             for i in range(len(features)):
                 targetvector = np.zeros(self.node_list[-1]) + 0.01
